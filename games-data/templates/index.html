@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      h1.heading {
+        font-size: 50px;
+        color: black;
+        text-decoration: underline;
+      }
+      h1 {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Top games 2021</h1>
+    {% for i in range(14) %}
+    <h1>{{ game_names[i] }}</h1>
+    <h2>{{ game_prices[i] }}</h2>
+    {% endfor %}
+  </body>
+</html>
